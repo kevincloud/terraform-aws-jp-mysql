@@ -29,11 +29,11 @@ variable "subnet_ids" {
 }
 
 variable "mysql_user" {
-    type = list(string)
+    type = string
 }
 
 variable "mysql_pass" {
-    type = list(string)
+    type = string
 }
 
 variable "tags" {
