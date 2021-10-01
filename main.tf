@@ -2,12 +2,7 @@ resource "aws_db_subnet_group" "dbsubnets" {
     name = "db-subnet-${var.unit_prefix}"
     subnet_ids = var.subnet_ids
 
-    tags = {
-        Owner = var.owner
-        Region = var.hc_region
-        Purpose = var.purpose
-        TTL = var.ttl
-    }
+    tags = var.tags
 }
 
 resource "aws_db_instance" "mysql" {

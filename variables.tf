@@ -2,6 +2,10 @@ variable "name" {
     type = string
 }
 
+variable "unit_prefix" {
+    type = string
+}
+
 variable "allocated_storage" {
     type = number
     default = 10
